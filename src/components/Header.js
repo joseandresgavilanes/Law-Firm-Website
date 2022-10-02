@@ -6,7 +6,6 @@ import NavMobile from "./NavMobile";
 
 // import logo
 import Logo from "../assets/img/logo.png";
-import { Input } from "postcss";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -18,7 +17,7 @@ const Header = () => {
         setBg(false);
       }
     });
-  }, [Input]);
+  }, []);
 
   return (
     <header
