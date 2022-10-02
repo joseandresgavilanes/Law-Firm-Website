@@ -37,7 +37,7 @@ const Contact = () => {
           {social.map((item, index) => {
             return (
               <a href="#" key={index}>
-                <img src={item.icon}></img>
+                <img src={item.icon} alt="item icon"></img>
               </a>
             );
           })}

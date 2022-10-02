@@ -28,7 +28,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="logo" />
         </a>
         <Nav />
         <NavMobile />
