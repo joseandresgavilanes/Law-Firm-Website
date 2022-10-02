@@ -9,6 +9,7 @@ import Logo from "../assets/img/logo.png";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 80) {
@@ -17,7 +18,7 @@ const Header = () => {
         setBg(false);
       }
     });
-  }, []);
+  });
 
   return (
     <header
@@ -26,10 +27,13 @@ const Header = () => {
       } p-8 lg:px-0 w-full fixed z-10 transition-all duration-300`}
     >
       <div className="container mx-auto flex items-center justify-between">
+        {/* logo */}
         <a href="#">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo image" />
         </a>
+        {/* nav */}
         <Nav />
+        {/* nav mobile */}
         <NavMobile />
       </div>
     </header>

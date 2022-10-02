@@ -36,9 +36,9 @@ const Contact = () => {
         <div className="flex items-center justify-between mx-auto max-w-[205px]">
           {social.map((item, index) => {
             return (
-              <div href="#" key={index}>
-                <img src={item.icon} alt="item icon"></img>
-              </div>
+              <a href="#" key={index}>
+                <img src={item.icon}></img>
+              </a>
             );
           })}
         </div>
